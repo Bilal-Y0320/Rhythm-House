@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Thriller",
+    "artist": "Michael Jackson",
+    "type": "Solo",
+    "year": 1982,
+    "genre": ["Pop", "R&B"],
+    "formats": ["CD", "Vinyl", "Digital"],
+    "price": 15,
+    "image": "./Media/Albums/Mj thriller.jfif"
+  },
+  {
+    "title": "The Eminem Show",
+    "artist": "Eminem",
+    "type": "Solo",
+    "year": 2002,
+    "genre": ["Hip-Hop", "Rap"],
+    "formats": ["CD", "Vinyl", "Digital", "Cassette"],
+    "price": 18,
+    "image": "./Media/Albums/The_Eminem_Show.jpg"
+  },
+  {
+    "title": "Nevermind",
+    "artist": "Nirvana",
+    "type": "Band",
+    "year": 1991,
+    "genre": ["Grunge", "Rock"],
+    "formats": ["CD", "Vinyl", "Cassette", "Digital"],
+    "price": 15,
+    "image": "./Media/Albums/Nirvana Nevermind.avif"
+  },
+  {
+    "title": "Titanic: Music from the Motion Picture",
+    "artist": "Various",
+    "type": "Soundtrack",
+    "year": 1997,
+    "genre": ["Soundtrack", "Orchestral", "Pop"],
+    "formats": ["CD", "Cassette", "Digital"],
+    "price": 15,
+    "image": "./Media/Soundtrack/Titanic Music from the motion picture Sound track.jfif"
+  }
+]

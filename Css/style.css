@@ -1,0 +1,1263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    width: 100%;
+    background-color: #000;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 1000;
+    backdrop-filter: blur(4px);
+}
+
+nav #Logo {
+    width: 5rem;
+    height: auto;
+    margin-left: 3rem;
+    border-radius: 50%;
+    box-shadow: 4px 3px 5px #fff;
+    transition: 0.4s ease-in-out;
+}
+
+nav #Logo:hover {
+    transform: scale(1.05);
+}
+
+
+nav #menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+nav #menu a {
+    font-size: 1.1rem;
+    text-shadow: 5px 5px 5px violet;
+    transition: 0.3s ease-in-out;
+}
+
+nav #menu a:hover {
+    text-shadow: 5px 5px 5px rgb(72, 180, 223);
+    transform: scale(1.05);
+    transform: translateY(-3px);
+    border-bottom: 0.1px solid #fff;
+}
+
+nav button {
+    font-size: 1.3rem;
+    margin-right: 3rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+nav button:hover {
+    color: violet;
+}
+
+@media (max-width: 1000px){
+    nav #Logo {
+        margin-left: 2rem;
+    }
+   
+   nav button{
+    margin-right: 2rem;
+   }
+}
+
+@media (max-width: 900px){
+     nav #Logo {
+        margin-left: 2rem;
+    }
+
+    nav #menu{
+        gap: 15px;
+    }
+
+    nav #menu a{
+        font-size: 0.9rem;
+    }
+   
+   nav button{
+    margin-right: 2rem;
+   }
+}
+
+@media (max-width: 650px){
+    nav #Logo {
+        width: 3rem;
+        margin-left: 1rem;
+    }
+
+    nav #menu{
+        gap: 12px;
+    }
+
+    nav #menu a{
+        font-size: 0.7rem;
+    }
+   
+   nav button{
+    font-size: 1rem;
+    margin-right: 0.7rem;
+   }
+}
+
+@media (max-width: 460px){
+     nav #Logo {
+        width: 2rem;
+    }
+
+    nav #menu{
+        gap: 7px;
+    }
+
+    nav #menu a{
+        font-size: 0.5rem;
+    }
+   
+   nav button{
+    font-size: 0.7rem;
+   }
+}
+
+header #bg {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    object-fit: cover;
+}
+
+
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0),
+            #000);
+    z-index: 3;
+}
+
+
+#Hero_Section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    text-align: center;
+}
+
+#Hero_Section h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 4px 4px 5px violet;
+}
+
+#Hero_Section p {
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 4px 4px 5px rgb(72, 180, 223);
+}
+
+#Albums {
+    width: 100%;
+    height: auto;
+    margin-bottom: 80px;
+}
+
+#Albums .Album-desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid violet;
+    padding-inline: 15px;
+    margin-bottom: 3rem;
+}
+
+#Albums .Album-desc h1 {
+    text-shadow: 2px 2px 10px #fff;
+}
+
+#Albums .Album-desc #search input {
+    color: #000;
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 6px;
+}
+
+
+#Albums .Album-desc #search button {
+    font-size: 1rem;
+    background: transparent;
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+}
+
+#Albums .Album_Align {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+}
+
+#Albums .Album_Align .Extra_Album {
+    display: none;
+}
+
+#Albums .Album_Align .Extra_Album.show {
+    display: block;
+}
+
+#Albums .Album-card {
+    width: 350px;
+    height: auto;
+    padding-bottom: 15px;
+    margin-bottom: 35px;
+    border: 2px solid violet;
+    box-shadow: 5px 5px 8px violet;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+#Albums .Album-card:hover {
+    transform: scale(1.01);
+    border: 2px solid rgb(72, 180, 223);
+    box-shadow: 3px 5px 10px rgb(72, 180, 223);
+
+}
+
+#Albums .Album-card .Album_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Albums .Album-card .Album_image img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#Albums .Album-card .Album_text {
+    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+#Albums .Album-card .Album_text h2 {
+    color: violet;
+}
+
+#Albums .Album-card:nth-child(4) .Album_text h2 {
+    word-spacing: 0px;
+    font-size: 1.1rem;
+}
+
+#Albums .Album-card .Album_text button {
+    font-size: 1rem;
+    padding: 13px;
+    border-radius: 30px;
+    background: linear-gradient(to right, violet, rgb(72, 180, 223));
+    cursor: pointer;
+    font-weight: 500;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+#Albums .Album-card .Album_text button:hover {
+    box-shadow: 2px 2px 15px #288cc5;
+    background: linear-gradient(to left, violet, rgb(72, 180, 223));
+}
+
+#Albums #btn-aln {
+    text-align: center;
+}
+
+#Albums #btn-aln button {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px #fff;
+    padding-inline: 20px;
+    padding-block: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 1px 5px 15px rgb(72, 180, 223);
+    background: #000;
+    transition: 0.3s ease-in-out;
+}
+
+#Albums #btn-aln button:hover {
+    color: #000;
+    background: #fff;
+    box-shadow: 1px 5px 10px violet;
+}
+
+#Magazines {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+#Magazines .Magazine-desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(72, 180, 223);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 15px;
+}
+
+#Magazines .Magazine-desc h1 {
+    text-shadow: 1px 2px 10px #fff;
+}
+
+#Magazines .Magazine-desc #search input {
+    color: #000;
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 6px;
+}
+
+#Magazines .Magazine-desc #search button {
+    font-size: 1rem;
+    background: transparent;
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+}
+
+#Magazines .magazine-align {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#Magazines .magazine-card {
+    width: 350px;
+    height: auto;
+    border: 1px solid rgb(72, 180, 223);
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px rgb(72, 180, 223);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+#Magazines .magazine-card:hover {
+    transform: scale(1.01);
+    border: 1px solid violet;
+    box-shadow: 5px 5px 8px violet;
+}
+
+#Magazines .magazine-card .magazine-image {
+    margin-top: 10px;
+}
+
+#Magazines .magazine-card .magazine-image img {
+    width: 330px;
+    height: 400px;
+    border-radius: 15px;
+}
+
+#Magazines .magazine-card .magazine-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#Magazines .magazine-card .magazine-text h2 {
+    color: rgb(72, 180, 223);
+}
+
+#Magazines .magazine-card .magazine-text button {
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 30px;
+    background: rgb(72, 180, 223);
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+#Magazines .magazine-card .magazine-text button:hover {
+    background: #fff;
+    color: #000;
+    box-shadow: 4px 4px 15px violet;
+}
+
+#Magazines #btn-aln {
+    text-align: center;
+}
+
+#Magazines #btn-aln button {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px #fff;
+    padding-inline: 20px;
+    padding-block: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 1px 5px 15px rgb(72, 180, 223);
+    background: #000;
+    transition: 0.3s ease-in-out;
+}
+
+#Magazines #btn-aln button:hover {
+    color: #000;
+    background: #fff;
+    box-shadow: 1px 5px 10px violet;
+}
+
+#Movies {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+#Movies .Movie_desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 15px;
+}
+
+#Movies .Movie_desc h1 {
+    text-shadow: 1px 2px 10px #fff;
+}
+
+#Movies .Movie_desc #search input {
+    color: #000;
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 6px;
+}
+
+#Movies .Movie_desc #search button {
+    font-size: 1rem;
+    background: transparent;
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+}
+
+#Movies .Movie_align {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#Movies .movie-card {
+    width: 350px;
+    height: auto;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+#Movies .movie-card:hover {
+    box-shadow: 5px 5px 15px #999999;
+    transform: scale(1.01);
+}
+
+#Movies .movie-card .movie-image {
+    margin-top: 10px;
+}
+
+#Movies .movie-card .movie-image img {
+    width: 330px;
+    height: 400px;
+    border-radius: 15px;
+}
+
+#Movies .movie-card .movie-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+#Movies .movie-card .movie-text h2 {
+    color: #fff;
+}
+
+#Movies .movie-card .movie-text button {
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 30px;
+    font-weight: 500;
+    background: #fff;
+    color: #000;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+#Movies .movie-card .movie-text button:hover {
+    background: #fff;
+    color: #000;
+    box-shadow: 4px 4px 15px #fff;
+}
+
+#Movies #btn-aln {
+    text-align: center;
+}
+
+#Movies #btn-aln button {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px #fff;
+    padding-inline: 20px;
+    padding-block: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 1px 5px 15px rgb(72, 180, 223);
+    background: #000;
+    transition: 0.3s ease-in-out;
+}
+
+#Movies #btn-aln button:hover {
+    color: #000;
+    background: #fff;
+    box-shadow: 1px 5px 10px violet;
+}
+
+#Live{
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+}
+
+#Live .Live_desc{
+    border-bottom: 1px solid goldenrod;
+}
+
+#Live h1{
+    text-shadow: 1px 2px 10px #fff;
+}
+
+
+#Live .Live-align {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#Live .live-card {
+    width: 430px;
+    height: auto;
+    border: 2px solid gold;
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px gold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+#Live .live-card:hover {
+    border: 1px solid goldenrod;
+    box-shadow: 5px 5px 25px goldenrod;
+    transform: scale(1.01);
+}
+
+#Live .live-card .live-image img {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+
+#Live .live-card .live-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+#Live .live-card .live-text h2 {
+    color: gold;
+}
+
+#Live .live-card .live-text button {
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 30px;
+    font-weight: 500;
+    background: #ffffff;
+    color: #000;
+    text-shadow: 2px 2px 4px #000;
+    box-shadow: 2px 2px 15px gold;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+#Live .live-card .live-text button:hover {
+    background: #000;
+    color: #fff;
+    text-shadow: 2px 2px 4px #fff;
+    box-shadow: 4px 4px 15px gold;
+}
+
+
+#Statistics {
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+#Statistics #line {
+    border-bottom: 1px solid rgb(72, 180, 223);
+}
+
+#Statistics h1 {
+    text-shadow: 1px 2px 10px #fff;
+}
+
+#Statistics #table {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+#Statistics table {
+    width: 100%;
+}
+
+#Statistics table tr th {
+    background: rgb(72, 180, 223);
+    border: 1px solid rgb(72, 180, 223);
+    padding: 12px;
+}
+
+#Statistics table tr td {
+    border: 1px solid rgb(72, 180, 223);
+    padding: 12px;
+}
+
+/* Membership Start */
+
+#Membership{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10rem;
+}
+
+#sub-line{
+    border-bottom: 1px solid gold;
+}
+
+.subscription-heading {
+    text-align: center;
+    font-size: 2.1rem;
+    color: gold;
+    text-shadow: 1px 2px 10px gold;
+}
+
+.subscription-main {
+    color: gold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.subscription-card:nth-child(1){
+     box-shadow: 0 0 20px grey;
+}
+
+.subscription-card:nth-child(1) p{
+   border-bottom: 2px solid rgb(87, 87, 87);
+}
+
+.subscription-card:nth-child(1) .btn{
+    border: 1px solid grey;
+    color: #999999;
+}
+
+.subscription-card:nth-child(1) .btn:hover{
+    background-color: #999999;
+    box-shadow: 3px 3px 20px grey;
+}
+
+.subscription-card {
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 10px;
+    box-shadow: 0 0 25px gold;
+}
+
+.subscription-main ul li {
+    list-style-type: none;
+}
+
+.subscription-main p {
+    color: gold;
+    text-align: center;
+    font-size: 1.3rem;
+    border-bottom: 2px solid gold;
+}
+
+.subscription-main .btn {
+    color: gold;
+    border: 1px solid gold;
+    border-radius: 20px;
+    width: 50%;
+    padding: 12px 7px;
+    display: block;
+    margin: 10px auto;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.subscription-main .btn:hover{
+    background: gold;
+    box-shadow: 3px 3px 20px gold;
+    color: black;
+}
+
+.subscription-card:nth-child(3){
+     box-shadow: 0 0 40px rgb(0, 119, 255);
+}
+
+.subscription-card:nth-child(3) p{
+    color:  rgb(0, 119, 255);
+   border-bottom: 2px solid  rgb(0, 119, 255);
+}
+
+.subscription-card:nth-child(3) .btn{
+    border: 1px solid  rgb(0, 119, 255);
+    color: #999999;
+}
+
+.subscription-card:nth-child(3) .btn:hover{
+    color: #000;
+    background-color:  rgb(0, 119, 255);
+    box-shadow: 3px 3px 35px  rgb(0, 119, 255);
+}
+
+/* Membership End */
+
+#Store {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+}
+
+#Store #border {
+    border-bottom: 1px solid violet;
+    margin-bottom: 3.5rem;
+}
+
+#Store #border h1 {
+    text-shadow: 2px 2px 10px #fff;
+}
+
+#Store table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#Store table th {
+    border: 1px solid violet;
+    background: violet;
+    padding: 12px;
+}
+
+#Store table td {
+    border: 1px solid violet;
+    padding: 12px;
+}
+
+#Store table .btn-align{
+    text-align: center;
+}
+
+#Store table td a {
+    padding: 6px;
+    border: 1px solid violet;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+#Store table td a:hover{
+    background: violet;
+}
+
+#About-Us{
+    width: 100%;
+    height: auto;
+    margin-top: 15rem;
+    margin-bottom: 3rem;
+}
+
+#About-Us #line{
+    border-bottom: 1px solid white;
+}
+
+#About-Us #line h1{
+    text-align: center;
+    text-shadow: 1px 2px 10px #fff;
+    font-size: 2.5rem;
+}
+
+#About-Us #About-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+#About-Us #About-Container .About-img{
+    padding-left: 35px;
+}
+
+#About-Us #About-Container .About-img img{
+    max-width: 30rem;
+    height: 800px;
+    border-radius: 70px;
+}
+
+#About-Us #About-Container .About-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+#About-Us #About-Container .About-desc h1{
+    font-size: 2.1rem;
+    font-weight: 400;
+    text-shadow: 3px 3px 7px rgb(72, 180, 223);
+    color: rgb(72, 180, 223);
+}
+
+#About-Us #About-Container .About-desc h1 strong{
+    font-size: 2.6rem;
+    color: violet;
+    text-shadow: 4px 5px 8px violet;
+}
+
+#About-Us #About-Container .About-desc h1 strong::before{
+    content: "";
+    height: 25px;
+    padding-left: 10px;
+    animation: brdr 0.5s infinite;
+}
+
+@keyframes brdr{
+    0%,100%{
+        border-left: 5px solid violet;
+    }
+    50%{
+        border-left: 2px solid transparent;
+    }
+}
+
+#About-Us #About-Container .About-desc p{
+    max-width: 65rem;
+    min-width: auto;
+    font-size: 1.8rem;
+    padding-right: 10px;
+    text-shadow: 1px 1px 5px #fff;
+
+}
+
+@media (max-width: 600px){
+
+    #About-Us #About-Container{
+        flex-wrap: wrap;
+    }
+
+    #About-Us #About-Container .About-img{
+        padding-left: 5px;
+    }
+
+    #About-Us #About-Container .About-img img{
+        height: auto;
+    }
+
+    #About-Us #About-Container .About-desc{
+        gap: 15px;
+    }
+    
+    #About-Us #About-Container .About-desc h1,
+    #About-Us #About-Container .About-desc h1 strong{
+        font-size: 1rem;
+    }
+
+    #About-Us #About-Container .About-desc p{
+        font-size: 1.1rem;
+        padding: 5px;
+    }
+}
+
+#Contact{
+    width: 100%;
+    height: auto;
+}
+
+#Contact #Contact-desc{
+    text-align: center;
+}
+
+#Contact #Contact-desc h2{
+    font-size: 2.5rem;
+    color: violet;
+    text-shadow: 3px 3px 8px rgb(255, 1, 170);
+}
+
+#Contact #Contact-desc #line{
+    border-top: 1px solid purple;
+}
+
+#Contact #Contact-align{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+#Contact .Contact-form{
+    width: 40%;
+    height: auto;
+    border: 1px solid purple;
+    box-shadow: 5px 5px 15px purple;
+    border-radius: 30px;
+    padding-bottom: 30px;
+}
+
+#Contact .Contact-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding-top: 30px;
+}
+
+#Contact .Contact-form form input{
+    padding-block: 10px;
+    padding-inline: 150px;
+    border-radius: 15px;
+    text-align: center;
+    background: transparent;
+}
+
+#Contact .Contact-form form button{
+    background: #fff;
+    color: #000;
+    border: none;
+    padding-block: 15px;
+    padding-inline: 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+    box-shadow: 6px 6px 15px #fff;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#Contact .Contact-form form button:hover{
+    background: #000;
+    color: #fff;
+    box-shadow: 6px 6px 15px purple;
+}
+
+@media (max-width: 1200px){
+    #Contact .Contact-form{
+        width: 70%;
+    }
+    #Contact .Contact-form form input{
+        padding-inline: 10rem;
+    }
+}
+
+@media (max-width: 730px){
+    #Contact .Contact-form{
+        width: 85%;
+    }
+
+    #Contact .Contact-form form input{
+        padding-inline: 9rem;
+    }
+}
+
+@media (max-width: 570px){
+    #Contact .Contact-form{
+        width: 100%;
+    }
+    #Contact .Contact-form form input{
+        padding-inline: 5.8rem;
+    }
+}
+
+/* Footer Start */
+
+.footer-section {
+    background-image: url('../Media/footer_img.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: #000;
+    transition: all 0.7s linear;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 30;
+    padding-bottom: 3rem;
+}
+
+.footer-section::after {
+    content: "";
+    width: 100%;
+    height: 130px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: linear-gradient(to top, #0000000a, #000000);
+}
+
+.footer-section::before {
+    content: "";
+    width: 100%;
+    height: 130px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background: linear-gradient(to bottom, #0000000a, #000000);
+}
+
+
+.container-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-section h3 {
+    color: violet;
+    text-shadow: 3px 3px 5px violet;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    margin-top: 7rem;
+
+}
+
+.f-about p {
+    color: white;
+    /* display: block; */
+    max-width: 300px;
+}
+
+.f-links ul,
+.f-services ul {
+    list-style: none;
+
+}
+
+.f-links ul,
+.f-services ul,
+.f-address address {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    justify-content: center;
+}
+
+.f-links li,
+.f-links a,
+.f-services li,
+.f-services a {
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.f-links span,
+.f-services span,
+.f-address span {
+    margin-right: 1rem;
+}
+
+.f-links a:hover {
+    color: violet;
+    text-shadow: 1px 2px 5px violet;
+}
+
+.f-services a:hover {
+    text-shadow: 1px 2px 5px rgb(72, 180, 223);
+    color: rgb(72, 180, 223);
+}
+
+.f-address a:hover {
+    text-shadow: 1px 2px 5px #1da1f2;
+    color: #1da1f2;
+}
+
+.f-address p,
+.f-address p a {
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 3.5rem 0;
+}
+
+.container .all-icons {
+    display: flex;
+    font-size: 2rem;
+    gap: 2rem;
+}
+
+.all-icons ion-icon {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50%;
+    background: #000;
+    color: aliceblue;
+}
+
+.all-icons a {
+    text-decoration: none;
+}
+
+.all-icons a {
+    display: inline-flex;
+    animation: wave 2.5s ease-in-out infinite;
+}
+
+.all-icons a:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.all-icons a:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.all-icons a:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes wave {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.instagram :hover {
+    color: rgb(221, 46, 221);
+    background: #fff;
+    border: 1px solid black;
+    box-shadow: 5px 5px 30px rgb(221, 46, 221);
+}
+
+.facebook :hover {
+    color: #1da1f2;
+    background: #fff;
+    border: 1px solid black;
+    box-shadow: 5px 5px 30px #1da1f2;
+}
+
+.youtube :hover {
+    color: red;
+    background: #fff;
+    border: 1px solid black;
+    box-shadow: 5px 5px 30px red;
+}
+
+
+.copright p {
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    padding-bottom: 100px;
+}
+
+
+/* Footer End */
+
+@media (max-width: 1300px) {
+#Albums .Album_Align {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+}

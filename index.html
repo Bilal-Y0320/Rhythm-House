@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhythm House</title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <nav>
+        <img data-aos="fade-up" data-aos-duration="1000" id="Logo" src="./Media/Rhythm_House-removebg-preview.png"
+            alt="Logo">
+        <div id="menu" data-aos="fade-in" data-aos-duration="1000">
+            <a href="#"><span class="fa home"></span>Home</a>
+            <a href="#Albums">Albums</a>
+            <a href="#Live">Live Shows</a>
+            <a href="#Membership">Membership</a>
+            <a href="#Store">Store</a>
+            <a href="#About-Us">About Us</a>
+            <a href="#Contact">Contact</a>
+        </div>
+        <button data-aos="slide-left" data-aos-duration="1000" class="fa-solid fa-bars"></button>
+    </nav>
+    <header>
+
+        <video
+            src="./Media/left-entering_neon_wave_spiking,_splitting_to_twin_peaks_on_dark_gradient,_simulating_heartbeat (1080p).mp4"
+            autoplay muted loop id="bg"></video>
+
+        <section id="Hero_Section">
+            <h1>Welcome to Rythm House</h1>
+            <p>Your music journey starts here</p>
+        </section>
+
+    </header>
+
+    <section id="Albums">
+        <div class="Album-desc">
+            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Albums</h1>
+            <div id="search" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <input type="text"><button class="fa-solid fa-magnifying-glass"></button>
+            </div>
+        </div>
+        <div class="Album_Align">
+            <div class="Album-card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+                <div class="Album_image">
+                    <img src="./Media/Albums/Mj thriller.jfif" alt="Thriller Album Cover" class="album-cover">
+                </div>
+                <div class="Album_text">
+                    <h2 class="album-title">Thriller</h2>
+                    <p><strong>Artist:</strong> Michael Jackson (Solo)</p>
+                    <p><strong>Year:</strong> 1982</p>
+                    <p><strong>Genre:</strong> Pop / R&B</p>
+                    <p><strong>Formats:</strong> CD, Vinyl, Digital</p>
+                    <p><strong>Price:</strong> $15</p>
+                    <button class="btn-buy">Buy now</button>
+                </div>
+
+            </div>
+
+            <div class="Album-card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800">
+                <div class="Album_image">
+                    <img src="./Media/Albums/The_Eminem_Show.jpg" alt="The Eminem Show Album Cover" class="album-cover">
+                </div>
+                <div class="Album_text">
+                    <h2 class="album-title">The Eminem Show</h2>
+                    <p><strong>Artist:</strong> Eminem (Solo)</p>
+                    <p><strong>Year:</strong> 2002</p>
+                    <p><strong>Genre:</strong> Hip-Hop / Rap</p>
+                    <p><strong>Formats:</strong> CD, Vinyl, Digital, Cassette</p>
+                    <p><strong>Price:</strong> $18</p>
+                    <button class="btn-buy">Buy now</button>
+                </div>
+            </div>
+
+            <div class="Album-card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1000">
+                <div class="Album_image">
+                    <img src="./Media/Albums/Nirvana Nevermind.avif" alt="Nevermind Album Cover" class="album-cover">
+                </div>
+                <div class="Album_text">
+                    <h2 class="album-title">Nevermind</h2>
+                    <p><strong>Artist:</strong> Nirvana (Band)</p>
+                    <p><strong>Year:</strong> 1991</p>
+                    <p><strong>Genre:</strong> Grunge / Rock</p>
+                    <p><strong>Formats:</strong> CD, Vinyl, Cassette, Digital</p>
+                    <p><strong>Price:</strong> $15</p>
+                    <button class="btn-buy">Buy now</button>
+                </div>
+            </div>
+
+            <div class="Album-card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1200">
+                <div class="Album_image">
+                    <img src="./Media/Soundtrack/Titanic Music Sound track.jfif" alt="Titanice SoundTrack image">
+                </div>
+                <div class="Album_text">
+                    <h2 class="album-title">Titanic: Music from the Motion Picture</h2>
+                    <p><strong>Artist:</strong> Various (Soundtrack)</p>
+                    <p><strong>Year:</strong> 1997</p>
+                    <p><strong>Genre:</strong> Soundtrack / Orchestral / Pop</p>
+                    <p><strong>Formats:</strong> CD, Cassette, Digital</p>
+                    <p><strong>Price:</strong> $15</p>
+                    <button class="btn-buy">Buy now</button>
+                </div>
+            </div>
+
+            <div class="Album-card Extra_Album" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1400">
+                <div class="Album_image">
+                    <img src="./Media/Albums/17_XXXTENTACION_Cover.png" alt="17 Album Cover" class="album-cover">
+                </div>
+                <div class="Album_text">
+                    <h2 class="album-title">17</h2>
+                    <p><strong>Artist:</strong> XXXTentacion (Solo)</p>
+                    <p><strong>Year:</strong> 2017</p>
+                    <p><strong>Genre:</strong> Hip Hop / Emo Rap</p>
+                    <p><strong>Formats:</strong> CD, Vinyl, Digital</p>
+                    <p><strong>Price:</strong> $14</p>
+                    <button class="btn-buy">Buy now</button>
+                </div>
+            </div>
+
+            <div class="Album-card Extra_Album" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1400">
+                <div class="Album_image">
+                    <img src="./Media/Albums/Jeff_Buckley_grace.jpg" alt="Grace Album Cover" class="album-cover">
+                </div>
+                <div class="Album_text">
+                    <h2 class="album-title">Grace</h2>
+                    <p><strong>Artist:</strong> Jeff Buckley (Solo)</p>
+                    <p><strong>Year:</strong> 1994</p>
+                    <p><strong>Genre:</strong> Alternative Rock</p>
+                    <p><strong>Formats:</strong> CD, Vinyl, Digital</p>
+                    <p><strong>Price:</strong> $16</p>
+                    <button class="btn-buy">Buy now</button>
+                </div>
+            </div>
+
+            <div class="Album-card Extra_Album" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1400">
+                <div class="Album_image">
+                    <img src="./Media/Albums/Linkin_Park_Hybrid_Theory_Album_Cover.jpg" alt="Hybrid Theory Album Cover"
+                        class="album-cover">
+                </div>
+                <div class="Album_text">
+                    <h2 class="album-title">Hybrid Theory</h2>
+                    <p><strong>Artist:</strong> Linkin Park (Band)</p>
+                    <p><strong>Year:</strong> 2000</p>
+                    <p><strong>Genre:</strong> Rock / Nu-Metal</p>
+                    <p><strong>Formats:</strong> CD, Vinyl, Digital</p>
+                    <p><strong>Price:</strong> $17</p>
+                    <button class="btn-buy">Buy now</button>
+                </div>
+            </div>
+
+            <div class="Album-card Extra_Album" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1400">
+                <div class="Album_image">
+                    <img src="./Media/Albums/Abbey-Road.webp" alt="Abbey Road Album Cover" class="album-cover">
+                </div>
+                <div class="Album_text">
+                    <h2 class="album-title">Abbey Road</h2>
+                    <p><strong>Artist:</strong> The Beatles (Band)</p>
+                    <p><strong>Year:</strong> 1969</p>
+                    <p><strong>Genre:</strong> Rock</p>
+                    <p><strong>Formats:</strong> CD, Vinyl, Digital</p>
+                    <p><strong>Price:</strong> $18</p>
+                    <button class="btn-buy">Buy now</button>
+                </div>
+            </div>
+
+            <div class="Album-card Extra_Album" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1400">
+                <div class="Album_image">
+                    <img src="./Media/Albums/The_Weeknd_-_Starboy.webp" alt="Starboy Album Cover" class="album-cover">
+                </div>
+                <div class="Album_text">
+                    <h2 class="album-title">Starboy</h2>
+                    <p><strong>Artist:</strong> The Weeknd (Solo)</p>
+                    <p><strong>Year:</strong> 2016</p>
+                    <p><strong>Genre:</strong> Pop / R&B / Electronic</p>
+                    <p><strong>Formats:</strong> CD, Vinyl, Digital</p>
+                    <p><strong>Price:</strong> $17</p>
+                    <button class="btn-buy">Buy now</button>
+                </div>
+            </div>
+
+            <div class="Album-card Extra_Album" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1400">
+                <div class="Album_image">
+                    <img src="./Media/Albums/Queen_A_Night_At_The_Opera.png" alt="A Night at the Opera Album Cover"
+                        class="album-cover">
+                </div>
+                <div class="Album_text">
+                    <h2 class="album-title">A Night at the Opera</h2>
+                    <p><strong>Artist:</strong> Queen (Band)</p>
+                    <p><strong>Year:</strong> 1975</p>
+                    <p><strong>Genre:</strong> Rock / Classic</p>
+                    <p><strong>Formats:</strong> CD, Vinyl, Digital</p>
+                    <p><strong>Price:</strong> $18</p>
+                    <button class="btn-buy">Buy now</button>
+                </div>
+            </div>
+
+            <div class="Album-card Extra_Album" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1400">
+                <div class="Album_image">
+                    <img src="./Media/Albums/Green_Day_-_American_Idiot_album_cover.png"
+                        alt="American Idiot Album Cover" class="album-cover">
+                </div>
+                <div class="Album_text">
+                    <h2 class="album-title">American Idiot</h2>
+                    <p><strong>Artist:</strong> Green Day (Band)</p>
+                    <p><strong>Year:</strong> 2004</p>
+                    <p><strong>Genre:</strong> Punk Rock</p>
+                    <p><strong>Formats:</strong> CD, Vinyl, Digital</p>
+                    <p><strong>Price:</strong> $16</p>
+                    <button class="btn-buy">Buy now</button>
+                </div>
+            </div>
+
+            <div class="Album-card Extra_Album" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1400">
+                <div class="Album_image">
+                    <img src="./Media/Albums/Metallica_-_Master_of_Puppets_cover.jpg"
+                        alt="Master of Puppets Album Cover" class="album-cover">
+                </div>
+                <div class="Album_text">
+                    <h2 class="album-title">Master of Puppets</h2>
+                    <p><strong>Artist:</strong> Metallica (Band)</p>
+                    <p><strong>Year:</strong> 1986</p>
+                    <p><strong>Genre:</strong> Metal</p>
+                    <p><strong>Formats:</strong> CD, Vinyl, Digital</p>
+                    <p><strong>Price:</strong> $17</p>
+                    <button class="btn-buy">Buy now</button>
+                </div>
+            </div>
+
+            <div class="Album-card Extra_Album" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1400">
+                <div class="Album_image">
+                    <img src="./Media/Albums/BornToDieAlbumCover.png" alt="Born to Die Album Cover" class="album-cover">
+                </div>
+                <div class="Album_text">
+                    <h2 class="album-title">Born to Die</h2>
+                    <p><strong>Artist:</strong> Lana Del Rey (Solo)</p>
+                    <p><strong>Year:</strong> 2012</p>
+                    <p><strong>Genre:</strong> Indie Pop</p>
+                    <p><strong>Formats:</strong> CD, Vinyl, Digital</p>
+                    <p><strong>Price:</strong> $16</p>
+                    <button class="btn-buy">Buy now</button>
+                </div>
+            </div>
+
+            <div class="Album-card Extra_Album" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1400">
+                <div class="Album_image">
+                    <img src="./Media/Albums/Daft_Punk_-_Discovery.png" alt="Discovery Album Cover" class="album-cover">
+                </div>
+                <div class="Album_text">
+                    <h2 class="album-title">Discovery</h2>
+                    <p><strong>Artist:</strong> Daft Punk (Duo)</p>
+                    <p><strong>Year:</strong> 2001</p>
+                    <p><strong>Genre:</strong> Electronic / House</p>
+                    <p><strong>Formats:</strong> CD, Vinyl, Digital</p>
+                    <p><strong>Price:</strong> $17</p>
+                    <button class="btn-buy">Buy now</button>
+                </div>
+            </div>
+
+            <div class="Album-card Extra_Album" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1400">
+                <div class="Album_image">
+                    <img src="./Media/Soundtrack/Frozen Sountrack.jpg" alt="Frozen Soundtrack Cover"
+                        class="album-cover">
+                </div>
+                <div class="Album_text">
+                    <h2 class="album-title">Frozen</h2>
+                    <p><strong>Artist:</strong> Various (Soundtrack)</p>
+                    <p><strong>Year:</strong> 2013</p>
+                    <p><strong>Genre:</strong> Movie / Pop</p>
+                    <p><strong>Formats:</strong> CD, Vinyl, Digital</p>
+                    <p><strong>Price:</strong> $15</p>
+                    <button class="btn-buy">Buy now</button>
+                </div>
+            </div>
+
+            <div class="Album-card Extra_Album" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1400">
+                <div class="Album_image">
+                    <img src="./Media/Albums/Kendrick_Lamar_-_Damn.png" alt="DAMN. Album Cover" class="album-cover">
+                </div>
+                <div class="Album_text">
+                    <h2 class="album-title">DAMN.</h2>
+                    <p><strong>Artist:</strong> Kendrick Lamar (Solo)</p>
+                    <p><strong>Year:</strong> 2017</p>
+                    <p><strong>Genre:</strong> Hip Hop / Rap</p>
+                    <p><strong>Formats:</strong> CD, Vinyl, Digital</p>
+                    <p><strong>Price:</strong> $17</p>
+                    <button class="btn-buy">Buy now</button>
+                </div>
+            </div>
+
+        </div>
+        <div id="btn-aln" data-aos="fade-up" data-aos-duration="500">
+            <button>View More</button>
+        </div>
+    </section>
+
+    <section id="Magazines">
+        <div class="Magazine-desc">
+            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Magazine</h1>
+            <div id="search" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <input type="text"><button class="fa-solid fa-magnifying-glass"></button>
+            </div>
+        </div>
+        <div class="magazine-align">
+            <div class="magazine-card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+                <div class="magazine-image">
+                    <img src="./Media/Magazine/Rolling Stone Magazine.webp" alt="Rolling Stone Cover"
+                        class="magazine-cover">
+                </div>
+                <div class="magazine-text">
+                    <h2 class="magazine-title">Rolling Stone</h3>
+                        <p class="magazine-genre"><strong>Genre:</strong> Rock, Pop, General Music & Culture</p>
+                        <p class="magazine-editor"><strong>Editor:</strong> Patrick Doyle</p>
+                        <p class="magazine-year"><strong>Year:</strong> 2024</p>
+                        <p class="magazine-price"><strong>Price:</strong> $15.99</p>
+                        <button class="purchase-button">Purchase</button>
+                </div>
+            </div>
+            <div class="magazine-card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800">
+                <div class="magazine-image">
+                    <img src="./Media/Magazine/MojoCoverRadiohead.jpg" alt="Mojo Cover" class="magazine-cover">
+                </div>
+                <div class="magazine-text">
+                    <h2 class="magazine-title">Mojo</h2>
+                    <p class="magazine-genre"><strong>Genre:</strong> Classic Rock, Alternative, In-depth Artist
+                        Features</p>
+                    <p class="magazine-editor"><strong>Editor:</strong> Andy Cowan</p>
+                    <p class="magazine-year"><strong>Year:</strong> 2024</p>
+                    <p class="magazine-price"><strong>Price:</strong> $14.99</p>
+                    <button class="purchase-button">Purchase</button>
+                </div>
+            </div>
+
+            <div class="magazine-card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1000">
+                <div class="magazine-image">
+                    <img src="./Media/Magazine/kerrang-magazine-kerrang-magazine.webp" alt="Kerrang Cover"
+                        class="magazine-cover">
+                </div>
+                <div class="magazine-text">
+                    <h2 class="magazine-title">Kerrang!</h2>
+                    <p class="magazine-genre"><strong>Genre:</strong> Rock, Punk, Alternative, Heavy Metal</p>
+                    <p class="magazine-editor"><strong>Editor:</strong> James McMahon</p>
+                    <p class="magazine-year"><strong>Year:</strong> 2024</p>
+                    <p class="magazine-price"><strong>Price:</strong> $12.99</p>
+                    <button class="purchase-button">Purchase</button>
+                </div>
+            </div>
+
+            <div class="magazine-card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1600">
+                <div class="magazine-image">
+                    <img src="./Media/Magazine/MixMagMagazine.jpg" alt="Mixmag Cover" class="magazine-cover">
+                </div>
+                <div class="magazine-text">
+                    <h2 class="magazine-title">Mixmag</h2>
+                    <p class="magazine-genre"><strong>Genre:</strong> Electronic, Dance, Club Culture</p>
+                    <p class="magazine-editor"><strong>Editor:</strong> Patrick Hinton</p>
+                    <p class="magazine-year"><strong>Year:</strong> 2024</p>
+                    <p class="magazine-price"><strong>Price:</strong> $13.50</p>
+                    <button class="purchase-button">Purchase</button>
+                </div>
+            </div>
+
+        </div>
+        <div id="btn-aln" data-aos="fade-up" data-aos-duration="500">
+            <button>View More</button>
+        </div>
+    </section>
+
+    <section id="Movies">
+        <div class="Movie_desc">
+            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Movies</h1>
+            <div id="search" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <input type="text"><button class="fa-solid fa-magnifying-glass"></button>
+            </div>
+        </div>
+        <div class="Movie_align">
+            <div class="movie-card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+                <div class="movie-image">
+                    <img src="./Media/Movies/Inception_OST.jpg" alt="Inception Poster" class="movie-poster">
+                </div>
+                <div class="movie-text">
+                    <h2 class="movie-title">Inception</h2>
+                    <p class="movie-genre"><strong>Genre:</strong> Sci-Fi</p>
+                    <p class="movie-year"><strong>Year:</strong> 2010</p>
+                    <p class="movie-price"><strong>Price:</strong> $14.99</p>
+                    <button class="purchase-button">Purchase</button>
+                </div>
+            </div>
+            <div class="movie-card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+                <div class="movie-image">
+                    <img src="./Media/Movies/Furious_7_poster.jpg" alt="Fast & Furious 7 Poster" class="movie-poster">
+                </div>
+                <div class="movie-text">
+                    <h2 class="movie-title">Fast & Furious 7</h2>
+                    <p class="movie-genre"><strong>Genre:</strong> Action / Racing</p>
+                    <p class="movie-year"><strong>Year:</strong> 2015</p>
+                    <p class="movie-price"><strong>Price:</strong> $19.99</p>
+                    <button class="purchase-button">Purchase</button>
+                </div>
+            </div>
+            <div class="movie-card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800">
+                <div class="movie-image">
+                    <img src="./Media/Movies/The_Conjuring_poster.jpg" alt="The Conjuring Poster" class="movie-poster">
+                </div>
+                <div class="movie-text">
+                    <h2 class="movie-title">The Conjuring</h2>
+                    <p class="movie-genre"><strong>Genre:</strong> Horror</p>
+                    <p class="movie-year"><strong>Year:</strong> 2013</p>
+                    <p class="movie-price"><strong>Price:</strong> $14.99</p>
+                    <button class="purchase-button">Purchase</button>
+                </div>
+            </div>
+            <div class="movie-card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1000">
+                <div class="movie-image">
+                    <img src="./Media/Movies/The_Dark_Knight_(2008_film).jpg" alt="The Dark Knight Poster"
+                        class="movie-poster">
+                </div>
+                <div class="movie-text">
+                    <h2 class="movie-title">The Dark Knight</h2>
+                    <p class="movie-genre"><strong>Genre:</strong> Action / Superhero</p>
+                    <p class="movie-year"><strong>Year:</strong> 2008</p>
+                    <p class="movie-price"><strong>Price:</strong> $19.99</p>
+                    <button class="purchase-button">Purchase</button>
+                </div>
+            </div>
+        </div>
+        <div id="btn-aln" data-aos="fade-up" data-aos-duration="500">
+            <button>View More</button>
+        </div>
+    </section>
+
+    <section id="Live">
+        <div class="Live_desc">
+            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Live Shows Available</h1>
+        </div>
+
+        <div class="Live-align">
+
+            <div class="live-card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+                <div class="live-image">
+                    <img src="./Media/LiveShows/TheWeeknd-2025.jpg" alt="The Weeknd Live" class="live-cover">
+                </div>
+                <div class="live-text">
+                    <h2 class="live-title">The Weeknd</h2>
+                    <p class="live-tour"><strong>Tour:</strong> After Hours Til Dawn Tour</p>
+                    <p class="live-genre"><strong>Genre:</strong> R&B / Pop</p>
+                    <p class="live-place"><strong>Location:</strong> World Tour</p>
+                    <button class="live-btn">Buy Tickets</button>
+                </div>
+            </div>
+
+            <div class="live-card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+                <div class="live-image">
+                    <img src="./Media/LiveShows/metallica_m27.jpg" alt="Metallica M72 Tour" class="live-cover">
+                </div>
+                <div class="live-text">
+                    <h2 class="live-title">Metallica</h2>
+                    <p class="live-tour"><strong>Tour:</strong> M72 World Tour</p>
+                    <p class="live-genre"><strong>Genre:</strong> Heavy Metal / Rock</p>
+                    <p class="live-place"><strong>Location:</strong> Europe & UK</p>
+                    <button class="live-btn">Buy Tickets</button>
+                </div>
+            </div>
+
+            <div class="live-card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800">
+                <div class="live-image">
+                    <img src="./Media/LiveShows/Saviors Tour.webp" alt="Green Day Saviors Tour" class="live-cover">
+                </div>
+                <div class="live-text">
+                    <h2 class="live-title">Green Day</h2>
+                    <p class="live-tour"><strong>Tour:</strong> Saviors Tour</p>
+                    <p class="live-genre"><strong>Genre:</strong> Punk Rock</p>
+                    <p class="live-place"><strong>Location:</strong> US & Europe</p>
+                    <button class="live-btn">Buy Tickets</button>
+                </div>
+            </div>
+
+            <div class="live-card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1000">
+                <div class="live-image">
+                    <img src="./Media/LiveShows/The Off-Season Tour.webp" alt="J. Cole The Off-Season Tour"
+                        class="live-cover">
+                </div>
+                <div class="live-text">
+                    <h2 class="live-title">J. Cole</h2>
+                    <p class="live-tour"><strong>Tour:</strong> The Off-Season Tour</p>
+                    <p class="live-genre"><strong>Genre:</strong> Hip-Hop / Rap</p>
+                    <p class="live-place"><strong>Location:</strong> North America (2025)</p>
+                    <button class="live-btn">Buy Tickets</button>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <section id="Statistics">
+        <div id="line">
+            <h1 data-aos="fade-up" data-aos-duration="1000">Monthly Album Sales Statistics</h1>
+        </div>
+        <div id="table">
+            <table data-aos="fade-up" data-aos-duration="1000">
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Album Sold</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>January</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>February</td>
+                        <td>123</td>
+                    </tr>
+                    <tr>
+                        <td>March</td>
+                        <td>136</td>
+                    </tr>
+                    <tr>
+                        <td>April</td>
+                        <td>172</td>
+                    </tr>
+                    <tr>
+                        <td>May</td>
+                        <td>200</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="Store">
+        <div id="border">
+            <h1 data-aos="fade-up" data-aos-duration="1000">Store Items & Price List</h1>
+        </div>
+        <table data-aos="fade-up" data-aos-duration="1000">
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Purchase</th>
+            </tr>
+            <tr>
+                <td>CDs</td>
+                <td>$15-30</td>
+                <td class="btn-align"><a href="#Albums">Purchase Now</a></td>
+            </tr>
+            <tr>
+                <td>DVDs</td>
+                <td>$25</td>
+                <td class="btn-align"><a href="#Movies">Purchase Now</a></td>
+            </tr>
+            <tr>
+                <td>Tapes</td>
+                <td>$15</td>
+                <td class="btn-align"><a href="#Albums">Purchase Now</a></td>
+            </tr>
+            <tr>
+                <td>Movies</td>
+                <td>$15-20</td>
+                <td class="btn-align"><a href="#Movies">Purchase Now</a></td>
+            </tr>
+            <tr>
+                <td>Magazines</td>
+                <td>$13-16</td>
+                <td class="btn-align"><a href="#Magazines">Purchase Now</a></td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="About-Us">
+        <div id="line">
+            <h1 data-aos="fade-up" data-aos-duration="1000">About Us</h1>
+        </div>
+        <div id="About-Container">
+            <div class="About-img" data-aos="fade-up" data-aos-duration="1000">
+                <img src="./Media/About-me.jpg" alt="">
+            </div>
+            <div class="About-desc">
+                <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><strong>Welcome to Rhythm
+                        House</strong> — where music meets soul.</h1>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Rhythm House is your destination for
+                    music and media across every genre and era. From classic rock and soulful jazz to pop hits, hip-hop,
+                    indie, and global sounds, we bring the world of music together under one roof. Explore our
+                    collection of albums, CDs, tapes, magazines, and movies — from timeless favorites to modern releases
+                    and collector’s editions.
+
+                    We’re here for fans, collectors, and anyone who loves discovering new sounds. At Rhythm House, every
+                    beat, story, and record matters — and we’re dedicated to keeping the rhythm alive.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="Membership">
+        <div id="sub-line">
+        <h1 class="subscription-heading" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Subscription</h1>
+        </div>
+        <div class="subscription-main">
+            <div class="subscription-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <p><b>Basic</b></p>
+                <ul>
+                    <li>✔️ Limited tracks</li>
+                    <li>✔️ Receive monthly newsletter</li>
+                    <li>✔️ Bookmark/favorite items</li>
+                    <li>❌ No early access to events</li>
+                    <li>❌ Multi-devices Access</li>
+                    <li>❌ priority Support</li>
+                </ul>
+                <button class="btn">FREE</button>
+
+            </div>
+
+            <div class="subscription-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <p>PRIME</p>
+                <ul>
+                    <li>✔️ Limited tracks</li>
+                    <li>✔️ Receive monthly newsletter</li>
+                    <li>✔️ Bookmark/favorite items</li>
+                    <li>✔️ No early access to events</li>
+                    <li>❌ Multi-devices Access</li>
+                    <li>❌ priority Support</li>
+                </ul>
+                <button class="btn">60$/Monthly</button>
+
+            </div>
+
+            <div class="subscription-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                <p>PRIME PLUS</p>
+                <ul>
+                    <li>✔️ Limited tracks</li>
+                    <li>✔️ Receive monthly newsletter</li>
+                    <li>✔️ Bookmark/favorite items</li>
+                    <li>✔️ No early access to events</li>
+                    <li>✔️ Multi-devices Access</li>
+                    <li>✔️ priority Support</li>
+                </ul>
+                <button class="btn">90$/YEARLY</button>
+
+            </div>
+        </div>
+    </div>
+
+    <section id="Contact">
+        <div id="Contact-desc">
+            <h2 data-aos="fade-up" data-aos-duration="1000">Contact Us</h2>
+            <div id="line"></div>
+        </div>
+        <div id="Contact-align">
+            <div class="Contact-form" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <form>
+                    <div id="name">
+                        <input type="text" placeholder="Enter Your Name" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    </div>
+                    <div id="pass">
+                        <input type="password" placeholder="Enter Your Password" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+                    </div>
+                    <div id="email">
+                        <input type="email" placeholder="Email" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                    </div>
+                    <div id="btn">
+                        <button data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200">Contact</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer Start -->
+
+    <footer data-aos="fade-up" data-aos-duration="1000" class="footer-section">
+
+        <div class="container-grid ">
+            <div class="f-about">
+                <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">About</h3>
+                <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+                    A recording studio is a space designed for capturing, mixing, and producing sound. It’s usually
+                    built with acoustic treatment—like soundproof walls, foam panels, and bass traps—to reduce unwanted
+                    noise and control how sound behaves in the room.
+                </p>
+            </div>
+            <div class="f-links">
+                <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">Links</h3>
+                <ul>
+                    <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
+                        <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                        <a href="#">Home</a>
+                    </li>
+
+                    <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
+                        <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                        <a href="#Albums">Albums</a>
+                    </li>
+
+                    <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
+                        <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                        <a href="#">About</a>
+                    </li>
+
+                    <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200">
+                        <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                        <a href="#">Membership</a>
+                    </li>
+
+                    <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1400">
+                        <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="f-services">
+
+                <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">Services</h3>
+                <ul>
+                    <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
+                        <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                        <a href="#">web design</a>
+                    </li>
+
+                    <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
+                        <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                        <a href="#">web devlopment</a>
+                    </li>
+
+                    <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200">
+                        <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                        <a href="#">Mern project</a>
+                    </li>
+
+                    <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1400">
+                        <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                        <a href="#">Online Classes</a>
+                    </li>
+
+                    <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1600">
+                        <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                        <a href="#">yotube Courses</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="f-address">
+                <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">Have a Question?</h3>
+                <address>
+                    <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
+                        <p>
+                            <span><ion-icon name="location-outline"></ion-icon></span>
+                            Sindh,karachi
+                        </p>
+                    </div>
+
+                    <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200">
+                        <p>
+                            <span><ion-icon name="location-outline"></ion-icon></span>
+                            <a href="">+92 3112005919</a>
+                        </p>
+                    </div>
+
+                    <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1400">
+                        <p>
+                            <span><ion-icon name="location-outline"></ion-icon></span>
+                            <a href="">info@gmail.com</a>
+                        </p>
+                    </div>
+                </address>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="all-icons">
+                <a href="https://www.instagram.com" class="instagram" target="_blank" data-aos="fade-up"
+                    data-aos-duration="1000" data-aos-delay="400">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+
+                <a href="https://www.facebook.com" class="facebook" target="_blank" data-aos="fade-up"
+                    data-aos-duration="1000" data-aos-delay="500">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+
+                <a href="https://www.youtube.com" class="youtube" target="_blank" data-aos="fade-up"
+                    data-aos-duration="1000" data-aos-delay="600">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+            </div>
+        </div>
+        <div class="copright" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <p>
+                A standard component that includes the copyright symbol (©), the year of publication, and the owner's
+                name (e.g., "© 2025 Company Name. All Rights Reserved.").
+            </p>
+        </div>
+
+    </footer>
+
+    <!-- Footer End -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./Js/script.js"></script>
+</body>
+
+</html>
