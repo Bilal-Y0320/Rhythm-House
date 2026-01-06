@@ -81,16 +81,6 @@ nav button:hover {
     color: violet;
 }
 
-@media (max-width: 1000px){
-    nav #Logo {
-        margin-left: 2rem;
-    }
-   
-   nav button{
-    margin-right: 2rem;
-   }
-}
-
 @media (max-width: 900px){
      nav #Logo {
         margin-left: 2rem;
@@ -109,7 +99,7 @@ nav button:hover {
    }
 }
 
-@media (max-width: 650px){
+@media (max-width: 768px){
     nav #Logo {
         width: 3rem;
         margin-left: 1rem;
@@ -129,7 +119,7 @@ nav button:hover {
    }
 }
 
-@media (max-width: 460px){
+@media (max-width: 480px){
      nav #Logo {
         width: 2rem;
     }
@@ -277,10 +267,10 @@ header::after {
 }
 
 #Albums .Album-card .Album_text {
-    padding-left: 5px;
     display: flex;
     flex-direction: column;
     gap: 3px;
+    padding: 10px 25px;
 }
 
 #Albums .Album-card .Album_text h2 {
@@ -301,6 +291,7 @@ header::after {
     font-weight: 500;
     border: none;
     transition: 0.3s ease-in-out;
+    margin-top: 15px;
 }
 
 #Albums .Album-card .Album_text button:hover {
@@ -409,6 +400,7 @@ header::after {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    padding: 10px 25px;
 }
 
 #Magazines .magazine-card .magazine-text h2 {
@@ -422,6 +414,7 @@ header::after {
     background: rgb(72, 180, 223);
     border: none;
     transition: 0.3s ease-in-out;
+    margin-top: 15px;
 }
 
 #Magazines .magazine-card .magazine-text button:hover {
@@ -546,6 +539,7 @@ header::after {
     color: #000;
     border: none;
     transition: 0.3s ease-in-out;
+    margin-top: 15px;
 }
 
 #Movies .movie-card .movie-text button:hover {
@@ -648,6 +642,7 @@ header::after {
     box-shadow: 2px 2px 15px gold;
     border: none;
     transition: 0.3s ease-in-out;
+    margin-top: 15px;
 }
 
 #Live .live-card .live-text button:hover {
@@ -929,7 +924,7 @@ header::after {
 
 }
 
-@media (max-width: 600px){
+@media (max-width: 768px){
 
     #About-Us #About-Container{
         flex-wrap: wrap;
