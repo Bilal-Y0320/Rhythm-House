@@ -81,61 +81,7 @@ nav button:hover {
     color: violet;
 }
 
-@media (max-width: 900px){
-     nav #Logo {
-        margin-left: 2rem;
-    }
 
-    nav #menu{
-        gap: 15px;
-    }
-
-    nav #menu a{
-        font-size: 0.9rem;
-    }
-   
-   nav button{
-    margin-right: 2rem;
-   }
-}
-
-@media (max-width: 768px){
-    nav #Logo {
-        width: 3rem;
-        margin-left: 1rem;
-    }
-
-    nav #menu{
-        gap: 12px;
-    }
-
-    nav #menu a{
-        font-size: 0.7rem;
-    }
-   
-   nav button{
-    font-size: 1rem;
-    margin-right: 0.7rem;
-   }
-}
-
-@media (max-width: 480px){
-     nav #Logo {
-        width: 2rem;
-    }
-
-    nav #menu{
-        gap: 7px;
-    }
-
-    nav #menu a{
-        font-size: 0.5rem;
-    }
-   
-   nav button{
-    font-size: 0.7rem;
-   }
-}
 
 header #bg {
     width: 100%;
@@ -191,13 +137,17 @@ header::after {
     margin-bottom: 80px;
 }
 
+#Albums #line {
+    border-bottom: 1px solid violet;
+    margin-bottom: 3.5rem;
+    opacity: 0.4;
+}
+
 #Albums .Album-desc {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid violet;
     padding-inline: 15px;
-    margin-bottom: 3rem;
 }
 
 #Albums .Album-desc h1 {
@@ -329,11 +279,16 @@ header::after {
     margin-bottom: 50px;
 }
 
+#Magazines #line {
+    border-bottom: 1px solid rgb(72, 180, 223);
+    margin-bottom: 3.5rem;
+    opacity: 0.4;
+}
+
 #Magazines .Magazine-desc {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid rgb(72, 180, 223);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -453,11 +408,16 @@ header::after {
     margin-bottom: 50px;
 }
 
+#Movies #line {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 3.5rem;
+    opacity: 0.4;
+}
+
 #Movies .Movie_desc {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -578,8 +538,10 @@ header::after {
     margin-bottom: 5rem;
 }
 
-#Live .Live_desc{
-    border-bottom: 1px solid goldenrod;
+#Live #line {
+    border-bottom: 1px solid gold;
+    margin-bottom: 3.5rem;
+    opacity: 0.4;
 }
 
 #Live h1{
@@ -660,7 +622,8 @@ header::after {
 }
 
 #Statistics #line {
-    border-bottom: 1px solid rgb(72, 180, 223);
+    border-bottom: 1px solid rgb(72, 180, 223); 
+    opacity: 0.4;
 }
 
 #Statistics h1 {
@@ -688,6 +651,55 @@ header::after {
     padding: 12px;
 }
 
+
+
+#Store {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+}
+
+#Store #line {
+    border-bottom: 1px solid violet;
+    margin-bottom: 3.5rem;
+    opacity: 0.4;
+}
+
+#Store #border h1 {
+    text-shadow: 2px 2px 10px #fff;
+}
+
+#Store table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#Store table th {
+    border: 1px solid violet;
+    background: violet;
+    padding: 12px;
+}
+
+#Store table td {
+    border: 1px solid violet;
+    padding: 12px;
+}
+
+#Store table .btn-align{
+    text-align: center;
+}
+
+#Store table td a {
+    padding: 6px;
+    border: 1px solid violet;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+#Store table td a:hover{
+    background: violet;
+}
+
 /* Membership Start */
 
 #Membership{
@@ -698,6 +710,8 @@ header::after {
 
 #sub-line{
     border-bottom: 1px solid gold;
+    margin-bottom: 3.5rem;
+    opacity: 0.4;
 }
 
 .subscription-heading {
@@ -745,6 +759,7 @@ header::after {
     justify-content: space-between;
     padding: 30px 10px;
     box-shadow: 0 0 25px gold;
+    transition: 0.3s ease-in-out;
 }
 
 .subscription-main ul li {
@@ -797,52 +812,6 @@ header::after {
 }
 
 /* Membership End */
-
-#Store {
-    width: 100%;
-    height: auto;
-    margin-bottom: 5rem;
-}
-
-#Store #border {
-    border-bottom: 1px solid violet;
-    margin-bottom: 3.5rem;
-}
-
-#Store #border h1 {
-    text-shadow: 2px 2px 10px #fff;
-}
-
-#Store table {
-    width: 100%;
-    margin-top: 20px;
-}
-
-#Store table th {
-    border: 1px solid violet;
-    background: violet;
-    padding: 12px;
-}
-
-#Store table td {
-    border: 1px solid violet;
-    padding: 12px;
-}
-
-#Store table .btn-align{
-    text-align: center;
-}
-
-#Store table td a {
-    padding: 6px;
-    border: 1px solid violet;
-    border-radius: 30px;
-    transition: 0.3s ease-in-out;
-}
-
-#Store table td a:hover{
-    background: violet;
-}
 
 #About-Us{
     width: 100%;
@@ -970,6 +939,7 @@ header::after {
 
 #Contact #Contact-desc #line{
     border-top: 1px solid purple;
+    opacity: 0.4;
 }
 
 #Contact #Contact-align{
@@ -1023,34 +993,6 @@ header::after {
     background: #000;
     color: #fff;
     box-shadow: 6px 6px 15px purple;
-}
-
-@media (max-width: 1200px){
-    #Contact .Contact-form{
-        width: 70%;
-    }
-    #Contact .Contact-form form input{
-        padding-inline: 10rem;
-    }
-}
-
-@media (max-width: 730px){
-    #Contact .Contact-form{
-        width: 85%;
-    }
-
-    #Contact .Contact-form form input{
-        padding-inline: 9rem;
-    }
-}
-
-@media (max-width: 570px){
-    #Contact .Contact-form{
-        width: 100%;
-    }
-    #Contact .Contact-form form input{
-        padding-inline: 5.8rem;
-    }
 }
 
 /* Footer Start */
@@ -1255,4 +1197,89 @@ header::after {
     flex-wrap: wrap;
 }
 
+}
+
+@media (max-width: 1200px){
+    #Contact .Contact-form{
+        width: 70%;
+    }
+    #Contact .Contact-form form input{
+        padding-inline: 10rem;
+    }
+}
+
+
+
+@media (max-width: 900px){
+     nav #Logo {
+        margin-left: 2rem;
+    }
+
+    nav #menu{
+        gap: 15px;
+    }
+
+    nav #menu a{
+        font-size: 0.9rem;
+    }
+   
+   /* nav button{
+    margin-right: 2rem;
+   } */
+}
+
+@media (max-width: 768px){
+    nav #Logo {
+        width: 3rem;
+        margin-left: 1rem;
+    }
+
+    nav #menu{
+        gap: 12px;
+    }
+
+    nav #menu a{
+        font-size: 0.7rem;
+    }
+   
+   nav button{
+    font-size: 1rem;
+    margin-right: 0.7rem;
+   }
+
+   #Contact .Contact-form{
+        width: 85%;
+    }
+
+    #Contact .Contact-form form input{
+        padding-inline: 9rem;
+    }
+}
+
+@media (max-width: 570px){
+    #Contact .Contact-form{
+        width: 100%;
+    }
+    #Contact .Contact-form form input{
+        padding-inline: 5.8rem;
+    }
+}
+
+
+@media (max-width: 480px){
+     nav #Logo {
+        width: 2rem;
+    }
+
+    nav #menu{
+        gap: 7px;
+    }
+
+    nav #menu a{
+        font-size: 0.5rem;
+    }
+   
+   nav button{
+    font-size: 0.7rem;
+   }
 }
