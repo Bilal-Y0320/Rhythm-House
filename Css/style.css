@@ -37,7 +37,7 @@ nav {
 nav #Logo {
     width: 5rem;
     height: auto;
-    margin-left: 3rem;
+    margin-left: 2rem;
     border-radius: 50%;
     box-shadow: 4px 3px 5px #fff;
     transition: 0.4s ease-in-out;
@@ -70,7 +70,6 @@ nav #menu a:hover {
 
 nav button {
     font-size: 1.3rem;
-    margin-right: 3rem;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -1281,5 +1280,21 @@ header::after {
    
    nav button{
     font-size: 0.7rem;
+   }
+
+   #Movies .movie-card {
+    width: 330px;
+   }
+
+   #Live .live-card{
+    width: 320px;
+   }
+
+   #About-Us #About-Container .About-img img{
+    width: 320px;
+   }
+
+   .container-grid{
+    flex-direction: column;
    }
 }
