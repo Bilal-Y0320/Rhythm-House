@@ -173,6 +173,7 @@ header::after {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     place-items: center;
+    gap: 10px;
 }
 
 #Albums .Album_Align .Extra_Album {
@@ -248,11 +249,11 @@ header::after {
     background: linear-gradient(to left, violet, rgb(72, 180, 223));
 }
 
-#Albums #btn-aln {
+#Albums .btn-aln {
     text-align: center;
 }
 
-#Albums #btn-aln button {
+#Albums .btn-aln button {
     font-size: 1.2rem;
     font-weight: 600;
     text-shadow: 1px 1px 1px #fff;
@@ -266,7 +267,7 @@ header::after {
     transition: 0.3s ease-in-out;
 }
 
-#Albums #btn-aln button:hover {
+#Albums .btn-aln button:hover {
     color: #000;
     background: #fff;
     box-shadow: 1px 5px 10px violet;
@@ -288,10 +289,6 @@ header::after {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-inline: 15px;
 }
 
 #Magazines .Magazine-desc h1 {
@@ -302,7 +299,7 @@ header::after {
     color: #000;
     font-weight: 500;
     border-radius: 15px;
-    padding: 6px;
+    padding: 6px 2px;
 }
 
 #Magazines .Magazine-desc #search button {
@@ -314,9 +311,10 @@ header::after {
 }
 
 #Magazines .magazine-align {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    gap: 10px;
 }
 
 #Magazines .magazine-card {
@@ -332,6 +330,14 @@ header::after {
     margin-bottom: 30px;
     padding-bottom: 15px;
     transition: 0.3s ease-in-out;
+}
+
+#Magazines .Extra_magazine{
+    display: none;
+}
+
+#Magazines .Extra_magazine.show{
+    display: block;
 }
 
 #Magazines .magazine-card:hover {
@@ -377,11 +383,11 @@ header::after {
     box-shadow: 4px 4px 15px violet;
 }
 
-#Magazines #btn-aln {
+#Magazines .btn-aln {
     text-align: center;
 }
 
-#Magazines #btn-aln button {
+#Magazines .btn-aln button {
     font-size: 1.2rem;
     font-weight: 600;
     text-shadow: 1px 1px 1px #fff;
@@ -395,7 +401,7 @@ header::after {
     transition: 0.3s ease-in-out;
 }
 
-#Magazines #btn-aln button:hover {
+#Magazines .btn-aln button:hover {
     color: #000;
     background: #fff;
     box-shadow: 1px 5px 10px violet;
@@ -418,8 +424,6 @@ header::after {
     justify-content: space-between;
     align-items: center;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-inline: 15px;
 }
 
@@ -473,7 +477,7 @@ header::after {
 }
 
 #Movies .movie-card .movie-image img {
-    width: 330px;
+    width: 320px;
     height: 400px;
     border-radius: 15px;
 }
@@ -507,11 +511,11 @@ header::after {
     box-shadow: 4px 4px 15px #fff;
 }
 
-#Movies #btn-aln {
+#Movies .btn-aln{
     text-align: center;
 }
 
-#Movies #btn-aln button {
+#Movies .btn-aln button {
     font-size: 1.2rem;
     font-weight: 600;
     text-shadow: 1px 1px 1px #fff;
@@ -525,7 +529,7 @@ header::after {
     transition: 0.3s ease-in-out;
 }
 
-#Movies #btn-aln button:hover {
+#Movies .btn-aln button:hover {
     color: #000;
     background: #fff;
     box-shadow: 1px 5px 10px violet;
@@ -1196,6 +1200,12 @@ header::after {
     flex-wrap: wrap;
 }
 
+#Magazines .magazine-align{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 }
 
 @media (max-width: 1200px){
@@ -1260,7 +1270,7 @@ header::after {
         width: 100%;
     }
     #Contact .Contact-form form input{
-        padding-inline: 5.8rem;
+        padding-inline: 5.3rem;
     }
 }
 
@@ -1271,7 +1281,7 @@ header::after {
     }
 
     nav #menu{
-        gap: 7px;
+        gap: 5px;
     }
 
     nav #menu a{
