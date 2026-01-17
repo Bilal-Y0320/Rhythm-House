@@ -78,6 +78,7 @@ nav button {
 
 nav button:hover {
     color: violet;
+    text-shadow: 2px 2px 5px violet;
 }
 
 
@@ -146,13 +147,14 @@ header::after {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-inline: 15px;
 }
 
 #Albums .Album-desc h1 {
     text-shadow: 2px 2px 10px #fff;
 }
 
-#Albums .Album-desc #search input {
+#Albums .Album-desc .search input {
     color: #000;
     font-weight: 500;
     border-radius: 15px;
@@ -160,13 +162,13 @@ header::after {
 }
 
 
-#Albums .Album-desc #search button {
+/* #Albums .Album-desc .search button {
     font-size: 1rem;
     background: transparent;
     cursor: pointer;
     padding: 5px;
     border: none;
-}
+} */
 
 #Albums .Album_Align {
     display: grid;
@@ -280,7 +282,7 @@ header::after {
 
 #Magazines #line {
     border-bottom: 1px solid rgb(72, 180, 223);
-    margin-bottom: 3.5rem;
+    margin-bottom: 1rem;
     opacity: 0.4;
 }
 
@@ -288,26 +290,27 @@ header::after {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-inline: 15px;
 }
 
 #Magazines .Magazine-desc h1 {
     text-shadow: 1px 2px 10px #fff;
 }
 
-#Magazines .Magazine-desc #search input {
+#Magazines .Magazine-desc .search input {
     color: #000;
     font-weight: 500;
     border-radius: 15px;
     padding: 6px 2px;
 }
 
-#Magazines .Magazine-desc #search button {
+/* #Magazines .Magazine-desc .search button {
     font-size: 1rem;
     background: transparent;
     cursor: pointer;
     padding: 5px;
     border: none;
-}
+} */
 
 #Magazines .magazine-align {
     display: grid;
@@ -354,6 +357,10 @@ header::after {
     height: 400px;
     border-radius: 15px;
 }
+
+#Magazines .Extra_magazine .magazine-image{
+    place-self: center;
+   }
 
 #Magazines .magazine-card .magazine-text {
     display: flex;
@@ -414,7 +421,7 @@ header::after {
 
 #Movies #line {
     border-bottom: 1px solid #fff;
-    margin-bottom: 3.5rem;
+    margin-bottom: 1rem;
     opacity: 0.4;
 }
 
@@ -430,20 +437,20 @@ header::after {
     text-shadow: 1px 2px 10px #fff;
 }
 
-#Movies .Movie_desc #search input {
+#Movies .Movie_desc .search input {
     color: #000;
     font-weight: 500;
     border-radius: 15px;
     padding: 6px;
 }
 
-#Movies .Movie_desc #search button {
+/* #Movies .Movie_desc .search button {
     font-size: 1rem;
     background: transparent;
     cursor: pointer;
     padding: 5px;
     border: none;
-}
+} */
 
 #Movies .Movie_align {
     display: flex;
@@ -1276,7 +1283,7 @@ header::after {
 
 @media (max-width: 480px){
      nav #Logo {
-        width: 2rem;
+        width: 1.4rem;
     }
 
     nav #menu{
@@ -1284,19 +1291,127 @@ header::after {
     }
 
     nav #menu a{
-        font-size: 0.5rem;
+        font-size: 0.45rem;
     }
    
    nav button{
-    font-size: 0.7rem;
+    font-size: 0.5rem;
    }
 
-   #Movies .movie-card {
-    width: 330px;
+   #Hero_Section h1{
+    width: 340px;
+    font-size: 1.4rem;
+   }
+
+   #Hero_Section p{
+    font-size: 0.8rem;
+   }
+
+   #Albums .Album-desc h1 {
+    font-size: 1.7rem;
+   }
+
+   #Albums .Album-desc .search input{
+    width: 150px;
+    padding-block: 5px;
+   }
+
+   #Albums .Album-card{
+    width: 280px;
+    height: auto;
+   }
+
+   #Albums .Album-card .Album_image img{
+    width: 260px;
+    height: 200px;
+   }
+
+   #Albums .Album-card .Album_text{
+    gap: 1px;
+    padding: 10px 15px;
+    font-size: 1rem;
+   }
+
+   #Albums .Album-card .Album_text h2{
+    font-size: 1.3rem;
+   }
+
+   #Magazines .Magazine-desc h1 {
+    font-size: 1.7rem;
+   }
+
+   #Magazines .Magazine-desc .search input{
+    width: 150px;
+    padding-block: 5px;
+   }
+
+    #Magazines .magazine-card{
+    width: 280px;
+    height: auto;
+   }
+
+   #Magazines .magazine-card .magazine-image img{
+    width: 260px;
+    height: 200px;
+   }
+
+   #Magazines .Extra_magazine .magazine-image{
+    place-self: center;
+   }
+
+   #Magazines .magazine-card .magazine-text{
+    gap: 1px;
+    padding: 10px 15px;
+    font-size: 1rem;
+   }
+
+   #Magazines .magazine-card .magazine-text h2{
+    font-size: 1.3rem;
+   }
+
+   #Movies .Movie_desc h1 {
+    font-size: 1.7rem;
+   }
+
+   #Movies .Movie_desc .search input{
+    width: 150px;
+    padding-block: 5px;
+   }
+
+   #Movies .movie-card{
+    width: 280px;
+    height: auto;
+   }
+
+   #Movies .movie-card .movie-image img{
+    width: 260px;
+    height: 200px;
+   }
+
+   #Movies .movie-card .movie-text{
+    gap: 1px;
+    padding: 10px 15px;
+    font-size: 1rem;
+   }
+
+   #Movies .movie-card .Album_text h2{
+    font-size: 1.3rem;
+   }
+
+   #Live h1{
+    font-size: 1.7rem;
    }
 
    #Live .live-card{
     width: 320px;
+   }
+
+   #Statistics h1 {
+    font-size: 1.5rem;
+   }
+
+   #Store h1 {
+    font-size: 1.5rem;
    }
 
    #About-Us #About-Container .About-img img{
