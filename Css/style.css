@@ -1282,16 +1282,21 @@ header::after {
 
 
 @media (max-width: 480px){
+
+    nav{
+        height: 7vh;
+    }
+
      nav #Logo {
-        width: 1.4rem;
+        width: 1.2rem;
     }
 
     nav #menu{
-        gap: 5px;
+        gap: 6px;
     }
 
     nav #menu a{
-        font-size: 0.45rem;
+        font-size: 0.5rem;
     }
    
    nav button{
