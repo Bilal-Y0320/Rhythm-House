@@ -7,7 +7,8 @@
     "genre": ["Pop", "R&B"],
     "formats": ["CD", "Vinyl", "Digital"],
     "price": 15,
-    "image": "./Media/Albums/Mj thriller.jfif"
+    "image": "./Media/Albums/Mj thriller.jfif",
+    "extra": false
   },
   {
     "title": "The Eminem Show",
@@ -17,7 +18,8 @@
     "genre": ["Hip-Hop", "Rap"],
     "formats": ["CD", "Vinyl", "Digital", "Cassette"],
     "price": 18,
-    "image": "./Media/Albums/The_Eminem_Show.jpg"
+    "image": "./Media/Albums/The_Eminem_Show.jpg",
+    "extra": false
   },
   {
     "title": "Nevermind",
@@ -27,7 +29,8 @@
     "genre": ["Grunge", "Rock"],
     "formats": ["CD", "Vinyl", "Cassette", "Digital"],
     "price": 15,
-    "image": "./Media/Albums/Nirvana Nevermind.avif"
+    "image": "./Media/Albums/Nirvana Nevermind.avif",
+    "extra": false
   },
   {
     "title": "Titanic: Music from the Motion Picture",
@@ -37,6 +40,139 @@
     "genre": ["Soundtrack", "Orchestral", "Pop"],
     "formats": ["CD", "Cassette", "Digital"],
     "price": 15,
-    "image": "./Media/Soundtrack/Titanic Music from the motion picture Sound track.jfif"
+    "image": "./Media/Soundtrack/Titanic Music Sound track.jfif",
+    "extra": false
+  },
+  {
+    "title": "17",
+    "artist": "XXXTENTACION",
+    "type": "Solo",
+    "year": 2017,
+    "genre": ["Hip Hop", "Emo Rap"],
+    "formats": ["CD", "Vinyl", "Digital"],
+    "price": 14,
+    "image": "./Media/Albums/17_XXXTENTACION_Cover.png",
+    "extra": true
+  },
+  {
+    "title": "Grace",
+    "artist": "Jeff Buckley",
+    "type": "Solo",
+    "year": 1994,
+    "genre": ["Alternative Rock"],
+    "formats": ["CD", "Vinyl", "Digital"],
+    "price": 16,
+    "image": "./Media/Albums/Jeff_Buckley_grace.jpg",
+    "extra": true
+  },
+  {
+    "title": "Hybrid Theory",
+    "artist": "Linkin Park",
+    "type": "Band",
+    "year": 2000,
+    "genre": ["Rock", "Nu-Metal"],
+    "formats": ["CD", "Vinyl", "Digital"],
+    "price": 17,
+    "image": "./Media/Albums/Linkin_Park_Hybrid_Theory_Album_Cover.jpg",
+    "extra": true
+  },
+  {
+    "title": "Abbey Road",
+    "artist": "The Beatles",
+    "type": "Band",
+    "year": 1969,
+    "genre": ["Rock"],
+    "formats": ["CD", "Vinyl", "Digital"],
+    "price": 18,
+    "image": "./Media/Albums/Abbey-Road.webp",
+    "extra": true
+  },
+  {
+    "title": "Starboy",
+    "artist": "The Weeknd",
+    "type": "Solo",
+    "year": 2016,
+    "genre": ["Pop", "R&B", "Electronic"],
+    "formats": ["CD", "Vinyl", "Digital"],
+    "price": 17,
+    "image": "./Media/Albums/The_Weeknd_-_Starboy.webp",
+    "extra": true
+  },
+  {
+    "title": "A Night at the Opera",
+    "artist": "Queen",
+    "type": "Band",
+    "year": 1975,
+    "genre": ["Rock", "Classic"],
+    "formats": ["CD", "Vinyl", "Digital"],
+    "price": 18,
+    "image": "./Media/Albums/Queen_A_Night_At_The_Opera.png",
+    "extra": true
+  },
+  {
+    "title": "American Idiot",
+    "artist": "Green Day",
+    "type": "Band",
+    "year": 2004,
+    "genre": ["Punk Rock"],
+    "formats": ["CD", "Vinyl", "Digital"],
+    "price": 16,
+    "image": "./Media/Albums/Green_Day_-_American_Idiot_album_cover.png",
+    "extra": true
+  },
+  {
+    "title": "Master of Puppets",
+    "artist": "Metallica",
+    "type": "Band",
+    "year": 1986,
+    "genre": ["Metal"],
+    "formats": ["CD", "Vinyl", "Digital"],
+    "price": 17,
+    "image": "./Media/Albums/Metallica_-_Master_of_Puppets_cover.jpg",
+    "extra": true
+  },
+  {
+    "title": "Born to Die",
+    "artist": "Lana Del Rey",
+    "type": "Solo",
+    "year": 2012,
+    "genre": ["Indie Pop"],
+    "formats": ["CD", "Vinyl", "Digital"],
+    "price": 16,
+    "image": "./Media/Albums/BornToDieAlbumCover.png",
+    "extra": true
+  },
+  {
+    "title": "Discovery",
+    "artist": "Daft Punk",
+    "type": "Duo",
+    "year": 2001,
+    "genre": ["Electronic", "House"],
+    "formats": ["CD", "Vinyl", "Digital"],
+    "price": 17,
+    "image": "./Media/Albums/Daft_Punk_-_Discovery.png",
+    "extra": true
+  },
+  {
+    "title": "Frozen",
+    "artist": "Various",
+    "type": "Soundtrack",
+    "year": 2013,
+    "genre": ["Movie", "Pop"],
+    "formats": ["CD", "Vinyl", "Digital"],
+    "price": 15,
+    "image": "./Media/Soundtrack/Frozen Sountrack.jpg",
+    "extra": true
+  },
+  {
+    "title": "DAMN.",
+    "artist": "Kendrick Lamar",
+    "type": "Solo",
+    "year": 2017,
+    "genre": ["Hip Hop", "Rap"],
+    "formats": ["CD", "Vinyl", "Digital"],
+    "price": 17,
+    "image": "./Media/Albums/Kendrick_Lamar_-_Damn.png",
+    "extra": true
   }
 ]
